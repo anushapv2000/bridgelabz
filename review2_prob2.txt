@@ -1,0 +1,32 @@
+Step 1 ::
+	Assign values to array
+	Expected Result:
+	items=("Apple" "Mango" "Orange" "Mango" "Apple" "Grapes")
+
+Step 2::
+	Declare a dictionary arr to use in condition to check for whether string 
+	is empty or not 
+	Expected Result:
+	declare -A arr
+Step 3::
+	looping through the whole items and check whether the item in dictionary 
+	is empty or not
+	Expected Result:
+	for i in "${items[@]}"
+	do
+	if [[ -z ${arr[$i]} ]];then
+	
+
+Step 4::
+	if empty then item is added to an array if not then dictionary value for 
+	that item is assigned as 1
+	Expected Result:
+	a+=("$i")
+	fi
+	arr["$i"]=1
+	done
+Step 5::
+	Output:
+	(Apple Mango Orange Mango Apple Grapes)
+	(Apple Mango Orange Grapes)
+

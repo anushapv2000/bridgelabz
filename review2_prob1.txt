@@ -1,0 +1,37 @@
+Step 1 ::
+	Assign values to array
+	Expected Result:
+	Students=("Saran" "Arjun" "Venkat" "Pooja")
+	TodayPresent=("Arjun" "Pooja")
+Step 2::
+	Storing the entire value of present student in array "arr"
+	Expected Result:
+	arr=" ${TodayPresent[*]} "
+Step 3::
+	looping through the whole students and check whether absent student array element
+ 	is equal to one of the element in total students
+	Expected Result:
+	
+	for i in "${Students[@]}"
+	do
+	if  [[ "$arr" =~ " $i " ]];
+
+Step 4::
+	if present then that element is presnt else it is absent
+	Expected Result:
+	then
+	echo "$i is present"
+	else
+	echo "$i is absent"
+	fi
+	done
+	
+Step5:: OUTPUT
+	$ bash review2_prob1.sh
+	Total Saran Arjun Venkat Pooja
+	Present Arjun Pooja
+	Saran is absent
+	Arjun is present
+	Venkat is absent
+	Pooja is present
+
