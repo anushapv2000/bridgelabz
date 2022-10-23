@@ -1,0 +1,6 @@
+a=2.0
+b=2.4
+echo $a $b | awk '{s=$1*$2}{print "value is " s}'
+echo $v
+
+
