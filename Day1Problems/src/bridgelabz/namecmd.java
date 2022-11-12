@@ -2,9 +2,10 @@ package bridgelabz;
 
 public class namecmd
 {
-    public static void main(String args[])
+    public static void main(String[] args)
     {
-        String a=args[0];
-        System.out.println("name from the cmd is "+a);
+        for (int i=0;i< args.length;i++) {
+            System.out.println("name from the cmd is " + args[i]);
+        }
     }
 }
