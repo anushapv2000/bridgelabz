@@ -9,8 +9,7 @@ public class DigitWord
         Scanner sc =new Scanner(System.in);
         System.out.println("Enter the number");
         int no=sc.nextInt();
-        String str = Integer.toString(no);
-        int len=str.length();
+        
         if(no==1)
                System.out.println("One");
         else if(no==2)
